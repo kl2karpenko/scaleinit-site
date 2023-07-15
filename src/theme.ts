@@ -9,7 +9,10 @@ export default (mode: PaletteMode) => createTheme({
       main: "rgb(108 34 7)",
     },
     secondary: {
-      main: "#111111",
+      main: "#fff",
+    },
+    info: {
+      main: "#121212",
     },
   },
 });

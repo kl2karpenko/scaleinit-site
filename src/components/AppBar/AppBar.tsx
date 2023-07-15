@@ -10,10 +10,12 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import Logo from "./Logo";
+import { useTheme } from "@mui/material/styles";
 
-const pages = ["Mentoring", "Pricing", "Blog"];
+const pages = ["Mentoring", "Pricing", "About Author"];
 
 export default function ResponsiveAppBar() {
+  const theme = useTheme();
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
 
@@ -33,11 +35,11 @@ export default function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="fixed" color={"transparent"}>
+    <AppBar position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ width: "30%", display: { xs: "none", md: "flex" } }}>
-            <Box component={Logo} sx={{ scale: 0.6 }} />
+            <Box component={Logo} sx={{ transform: "scale(0.7)", fill: "#fff" }} />
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -47,7 +49,7 @@ export default function ResponsiveAppBar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color="secondary"
             >
               <MenuIcon />
             </IconButton>
@@ -77,14 +79,14 @@ export default function ResponsiveAppBar() {
             </Menu>
           </Box>
           <Box sx={{ width: "30%", display: { xs: "flex", md: "none" } }}>
-            <Box component={Logo} sx={{ scale: 0.6 }} />
+            <Box component={Logo} sx={{ transform: "scale(0.7)", fill: "#fff" }} />
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, color: "white", display: "block", "&:hover": { background: "#121212", color: "#ccc" } }}
               >
                 {page}
               </Button>
