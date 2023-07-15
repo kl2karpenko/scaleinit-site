@@ -10,6 +10,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { useTheme } from "@mui/material/styles";
+import Pricing from "../Pricing";
 
 export default function Home() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -89,6 +90,8 @@ export default function Home() {
           </Grid>
         </Container>
       </main>
+
+      <Pricing />
     </Box>
   );
 }
