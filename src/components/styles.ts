@@ -6,11 +6,5 @@ export default makeStyles()((theme: Theme) => ({
     backgroundColor: theme?.palette?.background?.default,
     minHeight: "100%",
     position: "relative"
-  },
-  switcher: {
-    position: "absolute",
-    right: 0,
-    top: 0,
-    paddingTop: theme.spacing(2)
   }
 }));

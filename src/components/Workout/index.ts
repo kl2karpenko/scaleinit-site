@@ -1,1 +1,0 @@
-export { default as CurrentWorkout } from "./CurrentWorkout";

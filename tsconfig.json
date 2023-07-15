@@ -26,6 +26,6 @@
     "module": "commonjs",
     "allowJs": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "custom.d.ts"],
   "exclude": ["**/*.test.ts", "**/*.test.tsx", "node_modules/**", "build"]
 }

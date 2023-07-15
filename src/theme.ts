@@ -6,10 +6,10 @@ export default (mode: PaletteMode) => createTheme({
   palette: {
     mode,
     primary: {
-      main: purple[500],
+      main: "rgb(108 34 7)",
     },
     secondary: {
-      main: "rgb(255, 196, 0)",
+      main: "#111111",
     },
   },
 });

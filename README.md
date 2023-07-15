@@ -1,4 +1,4 @@
-# Getting Started with Create React SportApp
+# Getting Started with Create React
 
 This project was bootstrapped with [Create React SportApp](https://github.com/facebook/create-react-app).
 

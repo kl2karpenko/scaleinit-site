@@ -9,10 +9,10 @@ import {
   DialogTitle
 } from "@mui/material";
 import { useContext } from "react";
-import { SportAppContext } from "../SportAppContext";
+import { AppContext } from "../AppContext";
 
 export default function ModalDialog() {
-  const { dialogProps, setDialogProps } = useContext(SportAppContext);
+  const { dialogProps, setDialogProps } = useContext(AppContext);
   const { open, title, content, actionCloseCb, actionCloseLabel, actionConfirmCb, actionConfirmLabel } = dialogProps;
 
   const handleDialogClose = () => {
