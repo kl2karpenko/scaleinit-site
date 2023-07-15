@@ -1,6 +1,6 @@
 {
-  "name": "my-sport",
-  "version": "0.1.0",
+  "name": "scale-in-it",
+  "version": "0.0.1",
   "private": true,
   "engines": {
     "node": "16.x",
