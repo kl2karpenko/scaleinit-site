@@ -6,7 +6,7 @@ export default (mode: PaletteMode) => createTheme({
   palette: {
     mode,
     primary: {
-      main: "rgb(108 34 7)",
+      main: "rgb(108,34,7)",
     },
     secondary: {
       main: "#fff",
